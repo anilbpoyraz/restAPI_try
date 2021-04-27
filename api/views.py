@@ -86,7 +86,7 @@ class GenericAPIView(generics.GenericAPIView, mixins.ListModelMixin,
         return self.destroy(request, pk)
 
 
-class ArticleView(APIView):  # class based views API
+class ArticleView(APIView):
 
     def get(self, request):
         articles = Article.objects.all()
